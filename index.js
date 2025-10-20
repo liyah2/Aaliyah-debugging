@@ -60,7 +60,10 @@ function checkGuess() {
   if (attempts === maxNumberOfAttempts) {
     submitButton.disabled = true;
     guessInput.disabled = true;
-  } else {
+  } else if (guess === targetNumber){
+
+  }
+  else {
     guessInput.disabled = false;
   }
 
